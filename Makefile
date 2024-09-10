@@ -1,8 +1,6 @@
 .PHONY: all
 all:
 	make build
-	make create
-	make deploy
 
 .PHONY: build
 build:
@@ -10,11 +8,8 @@ build:
 
 .PHONY: deploy
 deploy:
-	graph deploy --node=http://localhost:8020 farmers-world
-
-.PHONY: create
-create:
 	graph create --node http://localhost:8020 farmers-world
+	graph deploy --node=http://localhost:8020 farmers-world
 
 .PHONY: publish
 publish:

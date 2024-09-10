@@ -20,7 +20,9 @@
 
 - **API Key**: https://thegraph.com/studio/apikeys/
 - **Base URL**: https://gateway.thegraph.com/api
-- **Subgraph ID**: `3eMDCbB9JBiherY33aC6e5gGUbuMYLA8xKFwEC27mSkz`
+- **Subgraph ID**:
+  - `3eMDCbB9JBiherY33aC6e5gGUbuMYLA8xKFwEC27mSkz`
+  - `17768678606329269960802053840745243856261143871618426305868635028232249275547`
 - **Query URL format**: `{base_url}`/api/`{api-key}`/subgraphs/id/`{subgraph_id}`
 
 ## GraphQL
