@@ -10,11 +10,11 @@ build:
 
 .PHONY: deploy
 deploy:
-	graph deploy --node=http://localhost:8020 tokens
+	graph deploy --node=http://localhost:8020 farmers-world
 
 .PHONY: create
 create:
-	graph create --node http://localhost:8020 tokens
+	graph create --node http://localhost:8020 farmers-world
 
 .PHONY: publish
 publish:
@@ -23,4 +23,4 @@ publish:
 
 .PHONY: gui
 gui:
-	substreams gui ./substreams/wax-transactions-v0.3.9.spkg -e wax.substreams.pinax.network:443 graph_out -s 326292294 --params "graph_out=code:eosio.token && notif:false"
+	substreams gui ./substreams/wax-transactions-v0.3.9.spkg -e wax.substreams.pinax.network:443 graph_out -s 326292294 --params "graph_out=(code:farmersworld || code:farmerstoken) && notif:false"
