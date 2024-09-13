@@ -10,11 +10,11 @@ dataSources:
     name: farmers-world
     network: wax
     source:
-      startBlock: 329253971
+      startBlock: 329435487
       package:
         moduleName: graph_out
         params: "(code:farmersworld || code:farmerstoken)"
-        file: ./substreams/antelope-transactions-v0.4.0.spkg
+        file: ./substreams/antelope-transactions-v0.4.2.spkg
     mapping:
       kind: substreams/graph-entities
       apiVersion: 0.0.5
